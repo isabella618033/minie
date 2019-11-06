@@ -1,0 +1,2594 @@
+[1mApache Maven 3.6.0[m
+Maven home: /usr/share/maven
+Java version: 1.8.0_222, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_HK, platform encoding: UTF-8
+OS name: "linux", version: "5.0.0-32-generic", arch: "amd64", family: "unix"
+[[1;36mDEBUG[m] Created new class realm maven.api
+[[1;36mDEBUG[m] Importing foreign packages into class realm maven.api
+[[1;36mDEBUG[m]   Imported: javax.annotation.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.annotation.security.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.enterprise.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.enterprise.util.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.classrealm < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.cli < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.exception < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution.scope < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.model < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.monitor < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.plugin < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.profiles < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.project < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.reporting < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.rtinfo < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.settings < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.toolchain < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.usability < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.events < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.observers < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.resource < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.component < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.container < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.context < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.logging < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.personality < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.collection < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.deployment < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.graph < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.installation < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.metadata < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.resolution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.spi < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.transfer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.version < plexus.core
+[[1;36mDEBUG[m]   Imported: org.fusesource.jansi.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.helpers.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.spi.* < plexus.core
+[[1;36mDEBUG[m] Populating class realm maven.api
+[[1;34mINFO[m] Error stacktraces are turned on.
+[[1;36mDEBUG[m] Message scheme: color
+[[1;36mDEBUG[m] Message styles: [1;36mdebug[m [1;34minfo[m [1;33mwarning[m [1;31merror[m [1;32msuccess[m [1;31mfailure[m [1mstrong[m [32mmojo[m [36mproject[m
+[[1;36mDEBUG[m] Reading global settings from /usr/share/maven/conf/settings.xml
+[[1;36mDEBUG[m] Reading user settings from /home/isabella/.m2/settings.xml
+[[1;36mDEBUG[m] Reading global toolchains from /usr/share/maven/conf/toolchains.xml
+[[1;36mDEBUG[m] Reading user toolchains from /home/isabella/.m2/toolchains.xml
+[[1;36mDEBUG[m] Using local repository at /home/isabella/.m2/repository
+[[1;36mDEBUG[m] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/isabella/.m2/repository
+[[1;34mINFO[m] Scanning for projects...
+[[1;36mDEBUG[m] Extension realms for project de.uni_mannheim:minie:jar:0.0.1-SNAPSHOT: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[[1;36mDEBUG[m] Resolving plugin prefix exec from [org.apache.maven.plugins, org.codehaus.mojo]
+[[1;36mDEBUG[m] Resolved plugin prefix exec to org.codehaus.mojo:exec-maven-plugin from POM de.uni_mannheim:minie:jar:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m] === REACTOR BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project: de.uni_mannheim:minie:jar:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m] Tasks:   [exec:java]
+[[1;36mDEBUG[m] Style:   Regular
+[[1;36mDEBUG[m] =======================================================================
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mde.uni_mannheim:minie[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding minie 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;36mDEBUG[m] Resolving plugin prefix exec from [org.apache.maven.plugins, org.codehaus.mojo]
+[[1;36mDEBUG[m] Resolved plugin prefix exec to org.codehaus.mojo:exec-maven-plugin from POM de.uni_mannheim:minie:jar:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] === PROJECT BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project:       de.uni_mannheim:minie:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m] Dependencies (collect): []
+[[1;36mDEBUG[m] Dependencies (resolve): [test]
+[[1;36mDEBUG[m] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.codehaus.mojo:exec-maven-plugin:1.6.0:java (default-cli)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addOutputToClasspath default-value="true">${addOutputToClasspath}</addOutputToClasspath>
+  <addResourcesToClasspath default-value="false">${addResourcesToClasspath}</addResourcesToClasspath>
+  <arguments>${exec.arguments}</arguments>
+  <classpathScope default-value="runtime">test</classpathScope>
+  <cleanupDaemonThreads default-value="true">${exec.cleanupDaemonThreads}</cleanupDaemonThreads>
+  <commandlineArgs>${exec.args}</commandlineArgs>
+  <daemonThreadJoinTimeout default-value="15000">${exec.daemonThreadJoinTimeout}</daemonThreadJoinTimeout>
+  <includePluginDependencies default-value="false">true</includePluginDependencies>
+  <includeProjectDependencies default-value="true">true</includeProjectDependencies>
+  <keepAlive default-value="false">${exec.keepAlive}</keepAlive>
+  <killAfter default-value="-1">${exec.killAfter}</killAfter>
+  <localRepository default-value="${localRepository}"/>
+  <mainClass>tests.minie.Run</mainClass>
+  <pluginDependencies default-value="${plugin.artifacts}"/>
+  <project default-value="${project}"/>
+  <remoteRepositories default-value="${project.remoteArtifactRepositories}"/>
+  <skip default-value="false">${exec.skip}</skip>
+  <sourceRoot>${sourceRoot}</sourceRoot>
+  <stopUnresponsiveDaemonThreads default-value="false">${exec.stopUnresponsiveDaemonThreads}</stopUnresponsiveDaemonThreads>
+  <testSourceRoot>${testSourceRoot}</testSourceRoot>
+</configuration>
+[[1;36mDEBUG[m] =======================================================================
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=2228958, ConflictMarker.markTime=1429210, ConflictMarker.nodeCount=106, ConflictIdSorter.graphTime=1217490, ConflictIdSorter.topsortTime=698943, ConflictIdSorter.conflictIdCount=54, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=21198784, ConflictResolver.conflictItemCount=105, DefaultDependencyCollector.collectTime=759744387, DefaultDependencyCollector.transformTime=30122394}
+[[1;36mDEBUG[m] de.uni_mannheim:minie:jar:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m]    it.unimi.dsi:fastutil:jar:8.1.0:compile
+[[1;36mDEBUG[m]    edu.stanford.nlp:stanford-corenlp:jar:3.8.0:compile
+[[1;36mDEBUG[m]       com.apple:AppleJavaExtensions:jar:1.4:compile
+[[1;36mDEBUG[m]       de.jollyday:jollyday:jar:0.4.9:compile
+[[1;36mDEBUG[m]          javax.xml.bind:jaxb-api:jar:2.2.7:compile
+[[1;36mDEBUG[m]       org.apache.commons:commons-lang3:jar:3.3.1:compile
+[[1;36mDEBUG[m]       org.apache.lucene:lucene-queryparser:jar:4.10.3:compile
+[[1;36mDEBUG[m]          org.apache.lucene:lucene-sandbox:jar:4.10.3:compile
+[[1;36mDEBUG[m]       org.apache.lucene:lucene-analyzers-common:jar:4.10.3:compile
+[[1;36mDEBUG[m]       org.apache.lucene:lucene-queries:jar:4.10.3:compile
+[[1;36mDEBUG[m]       org.apache.lucene:lucene-core:jar:4.10.3:compile
+[[1;36mDEBUG[m]       javax.servlet:javax.servlet-api:jar:3.0.1:compile
+[[1;36mDEBUG[m]       com.io7m.xom:xom:jar:1.2.10:compile
+[[1;36mDEBUG[m]          xml-apis:xml-apis:jar:1.3.03:compile
+[[1;36mDEBUG[m]          xerces:xercesImpl:jar:2.8.0:compile
+[[1;36mDEBUG[m]          xalan:xalan:jar:2.7.0:compile
+[[1;36mDEBUG[m]       joda-time:joda-time:jar:2.9.4:compile
+[[1;36mDEBUG[m]       com.googlecode.efficient-java-matrix-library:ejml:jar:0.23:compile
+[[1;36mDEBUG[m]       org.glassfish:javax.json:jar:1.0.4:compile
+[[1;36mDEBUG[m]       org.slf4j:slf4j-api:jar:1.7.12:compile
+[[1;36mDEBUG[m]       com.google.protobuf:protobuf-java:jar:3.2.0:compile
+[[1;36mDEBUG[m]    edu.stanford.nlp:stanford-corenlp:jar:models:3.8.0:compile
+[[1;36mDEBUG[m]    org.glassfish.jersey.containers:jersey-container-grizzly2-http:jar:2.26:compile
+[[1;36mDEBUG[m]       org.glassfish.hk2.external:javax.inject:jar:2.5.0-b42:compile
+[[1;36mDEBUG[m]       org.glassfish.grizzly:grizzly-http-server:jar:2.4.0:compile
+[[1;36mDEBUG[m]          org.glassfish.grizzly:grizzly-http:jar:2.4.0:compile
+[[1;36mDEBUG[m]             org.glassfish.grizzly:grizzly-framework:jar:2.4.0:compile
+[[1;36mDEBUG[m]       org.glassfish.jersey.core:jersey-common:jar:2.26:compile
+[[1;36mDEBUG[m]          javax.annotation:javax.annotation-api:jar:1.2:compile
+[[1;36mDEBUG[m]          org.glassfish.hk2:osgi-resource-locator:jar:1.0.1:compile
+[[1;36mDEBUG[m]       org.glassfish.jersey.core:jersey-server:jar:2.26:compile
+[[1;36mDEBUG[m]          org.glassfish.jersey.core:jersey-client:jar:2.26:compile
+[[1;36mDEBUG[m]          org.glassfish.jersey.media:jersey-media-jaxb:jar:2.26:compile
+[[1;36mDEBUG[m]          javax.validation:validation-api:jar:1.1.0.Final:compile
+[[1;36mDEBUG[m]       javax.ws.rs:javax.ws.rs-api:jar:2.1:compile
+[[1;36mDEBUG[m]    org.glassfish.jersey.inject:jersey-hk2:jar:2.26:compile
+[[1;36mDEBUG[m]       org.glassfish.hk2:hk2-locator:jar:2.5.0-b42:compile
+[[1;36mDEBUG[m]          org.glassfish.hk2.external:aopalliance-repackaged:jar:2.5.0-b42:compile
+[[1;36mDEBUG[m]          org.glassfish.hk2:hk2-api:jar:2.5.0-b42:compile
+[[1;36mDEBUG[m]             javax.inject:javax.inject:jar:1:compile
+[[1;36mDEBUG[m]          org.glassfish.hk2:hk2-utils:jar:2.5.0-b42:compile
+[[1;36mDEBUG[m]          org.javassist:javassist:jar:3.22.0-CR2:compile
+[[1;36mDEBUG[m]    org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.26:compile
+[[1;36mDEBUG[m]       org.glassfish.jersey.ext:jersey-entity-filtering:jar:2.26:compile
+[[1;36mDEBUG[m]       com.fasterxml.jackson.core:jackson-annotations:jar:2.8.4:compile
+[[1;36mDEBUG[m]       com.fasterxml.jackson.core:jackson-databind:jar:2.8.4:compile
+[[1;36mDEBUG[m]          com.fasterxml.jackson.core:jackson-core:jar:2.8.4:compile
+[[1;36mDEBUG[m]       com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.8.4:compile
+[[1;36mDEBUG[m]    org.glassfish.jersey.media:jersey-media-json-processing:jar:2.26:compile
+[[1;36mDEBUG[m]       org.glassfish:jsonp-jaxrs:jar:1.1.1:compile
+[[1;36mDEBUG[m]    org.glassfish.jersey.media:jersey-media-multipart:jar:2.26:compile
+[[1;36mDEBUG[m]       org.jvnet.mimepull:mimepull:jar:1.9.6:compile
+[[1;36mDEBUG[m]    org.glassfish.jersey.media:jersey-media-sse:jar:2.26:compile
+[[1;36mDEBUG[m]    net.sf.jopt-simple:jopt-simple:jar:6.0-alpha-1:compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.6.0:java[m [1m(default-cli)[m @ [36mminie[0;1m ---[m
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=1008374, ConflictMarker.markTime=446884, ConflictMarker.nodeCount=93, ConflictIdSorter.graphTime=683436, ConflictIdSorter.topsortTime=210873, ConflictIdSorter.conflictIdCount=39, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5182875, ConflictResolver.conflictItemCount=78, DefaultDependencyCollector.collectTime=301605033, DefaultDependencyCollector.transformTime=7691716}
+[[1;36mDEBUG[m] org.codehaus.mojo:exec-maven-plugin:jar:1.6.0:
+[[1;36mDEBUG[m]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-project:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[[1;36mDEBUG[m]          junit:junit:jar:4.12:test
+[[1;36mDEBUG[m]             org.hamcrest:hamcrest-core:jar:1.3:test
+[[1;36mDEBUG[m]    org.apache.maven:maven-model:jar:2.2.1:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-artifact:jar:2.2.1:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[[1;36mDEBUG[m]       backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-core:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[[1;36mDEBUG[m]          org.slf4j:slf4j-api:jar:1.5.6:runtime
+[[1;36mDEBUG[m]       org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[[1;36mDEBUG[m]       org.apache.maven.reporting:maven-reporting-api:jar:2.2.1:compile
+[[1;36mDEBUG[m]          org.apache.maven.doxia:doxia-sink-api:jar:1.1:compile
+[[1;36mDEBUG[m]          org.apache.maven.doxia:doxia-logging-api:jar:1.1:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[[1;36mDEBUG[m]       commons-cli:commons-cli:jar:1.2:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-monitor:jar:2.2.1:compile
+[[1;36mDEBUG[m]       classworlds:classworlds:jar:1.1:compile
+[[1;36mDEBUG[m]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[[1;36mDEBUG[m]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-utils:jar:3.0.20:compile
+[[1;36mDEBUG[m]    org.apache.commons:commons-exec:jar:1.3:compile
+[[1;36mDEBUG[m] Created new class realm plugin>org.codehaus.mojo:exec-maven-plugin:1.6.0
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.codehaus.mojo:exec-maven-plugin:1.6.0
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.codehaus.mojo:exec-maven-plugin:1.6.0
+[[1;36mDEBUG[m]   Included: org.codehaus.mojo:exec-maven-plugin:jar:1.6.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[[1;36mDEBUG[m]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[[1;36mDEBUG[m]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[[1;36mDEBUG[m]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[[1;36mDEBUG[m]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.2.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.1
+[[1;36mDEBUG[m]   Included: commons-cli:commons-cli:jar:1.2
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.20
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-exec:jar:1.3
+[[1;36mDEBUG[m] Configuring mojo org.codehaus.mojo:exec-maven-plugin:1.6.0:java from plugin realm ClassRealm[plugin>org.codehaus.mojo:exec-maven-plugin:1.6.0, parent: sun.misc.Launcher$AppClassLoader@1b6d3586]
+[[1;36mDEBUG[m] Configuring mojo 'org.codehaus.mojo:exec-maven-plugin:1.6.0:java' with basic configurator -->
+[[1;36mDEBUG[m]   (f) addOutputToClasspath = true
+[[1;36mDEBUG[m]   (f) addResourcesToClasspath = false
+[[1;36mDEBUG[m]   (f) arguments = []
+[[1;36mDEBUG[m]   (f) classpathScope = test
+[[1;36mDEBUG[m]   (f) cleanupDaemonThreads = true
+[[1;36mDEBUG[m]   (f) daemonThreadJoinTimeout = 15000
+[[1;36mDEBUG[m]   (f) includePluginDependencies = true
+[[1;36mDEBUG[m]   (f) includeProjectDependencies = true
+[[1;36mDEBUG[m]   (f) keepAlive = false
+[[1;36mDEBUG[m]   (f) killAfter = -1
+[[1;36mDEBUG[m]   (f) localRepository =       id: local
+      url: file:///home/isabella/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[[1;36mDEBUG[m]   (f) mainClass = tests.minie.Run
+[[1;36mDEBUG[m]   (f) pluginDependencies = [org.codehaus.mojo:exec-maven-plugin:maven-plugin:1.6.0:, org.apache.maven:maven-toolchain:jar:2.2.1:compile, org.apache.maven:maven-project:jar:2.2.1:compile, org.apache.maven:maven-settings:jar:2.2.1:compile, org.apache.maven:maven-profile:jar:2.2.1:compile, org.apache.maven:maven-plugin-registry:jar:2.2.1:compile, org.codehaus.plexus:plexus-interpolation:jar:1.11:compile, org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, org.apache.maven:maven-model:jar:2.2.1:compile, org.apache.maven:maven-artifact:jar:2.2.1:compile, org.apache.maven:maven-artifact-manager:jar:2.2.1:compile, org.apache.maven:maven-repository-metadata:jar:2.2.1:compile, backport-util-concurrent:backport-util-concurrent:jar:3.1:compile, org.apache.maven:maven-core:jar:2.2.1:compile, org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile, org.slf4j:slf4j-jdk14:jar:1.5.6:runtime, org.slf4j:slf4j-api:jar:1.5.6:runtime, org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime, org.apache.maven.reporting:maven-reporting-api:jar:2.2.1:compile, org.apache.maven.doxia:doxia-sink-api:jar:1.1:compile, org.apache.maven.doxia:doxia-logging-api:jar:1.1:compile, org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile, commons-cli:commons-cli:jar:1.2:compile, org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile, org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile, org.apache.maven:maven-monitor:jar:2.2.1:compile, classworlds:classworlds:jar:1.1:compile, org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile, org.sonatype.plexus:plexus-cipher:jar:1.4:compile, org.apache.maven:maven-plugin-api:jar:2.2.1:compile, org.codehaus.plexus:plexus-utils:jar:3.0.20:compile, org.apache.commons:commons-exec:jar:1.3:compile]
+[[1;36mDEBUG[m]   (f) project = MavenProject: de.uni_mannheim:minie:0.0.1-SNAPSHOT @ /home/isabella/Documents/FYP/minie/pom.xml
+[[1;36mDEBUG[m]   (f) remoteRepositories = [      id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => daily]
+]
+[[1;36mDEBUG[m]   (f) skip = false
+[[1;36mDEBUG[m]   (f) stopUnresponsiveDaemonThreads = false
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] Invoking : tests.minie.Run.main()
+[[1;36mDEBUG[m] All Plugin Dependencies will be included.
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-error-diagnostics to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-settings to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: slf4j-api to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-artifact-manager to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: classworlds to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-toolchain to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-core to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-project to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-plugin-api to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: plexus-interactivity-api to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-repository-metadata to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: commons-exec to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: jcl-over-slf4j to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-artifact to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: commons-cli to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-plugin-descriptor to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: doxia-sink-api to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-monitor to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: exec-maven-plugin to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-profile to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: plexus-sec-dispatcher to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-reporting-api to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-plugin-parameter-documenter to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: plexus-utils to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-model to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: plexus-interpolation to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: doxia-logging-api to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: plexus-cipher to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: maven-plugin-registry to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: plexus-container-default to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: backport-util-concurrent to classpath
+[[1;36mDEBUG[m] Adding plugin dependency artifact: slf4j-jdk14 to classpath
+[[1;36mDEBUG[m] Project Dependencies will be included.
+[[1;36mDEBUG[m] Collected project artifacts [it.unimi.dsi:fastutil:jar:8.1.0:compile, edu.stanford.nlp:stanford-corenlp:jar:3.8.0:compile, com.apple:AppleJavaExtensions:jar:1.4:compile, de.jollyday:jollyday:jar:0.4.9:compile, javax.xml.bind:jaxb-api:jar:2.2.7:compile, org.apache.commons:commons-lang3:jar:3.3.1:compile, org.apache.lucene:lucene-queryparser:jar:4.10.3:compile, org.apache.lucene:lucene-sandbox:jar:4.10.3:compile, org.apache.lucene:lucene-analyzers-common:jar:4.10.3:compile, org.apache.lucene:lucene-queries:jar:4.10.3:compile, org.apache.lucene:lucene-core:jar:4.10.3:compile, javax.servlet:javax.servlet-api:jar:3.0.1:compile, com.io7m.xom:xom:jar:1.2.10:compile, xml-apis:xml-apis:jar:1.3.03:compile, xerces:xercesImpl:jar:2.8.0:compile, xalan:xalan:jar:2.7.0:compile, joda-time:joda-time:jar:2.9.4:compile, com.googlecode.efficient-java-matrix-library:ejml:jar:0.23:compile, org.glassfish:javax.json:jar:1.0.4:compile, org.slf4j:slf4j-api:jar:1.7.12:compile, com.google.protobuf:protobuf-java:jar:3.2.0:compile, edu.stanford.nlp:stanford-corenlp:jar:models:3.8.0:compile, org.glassfish.jersey.containers:jersey-container-grizzly2-http:jar:2.26:compile, org.glassfish.hk2.external:javax.inject:jar:2.5.0-b42:compile, org.glassfish.grizzly:grizzly-http-server:jar:2.4.0:compile, org.glassfish.grizzly:grizzly-http:jar:2.4.0:compile, org.glassfish.grizzly:grizzly-framework:jar:2.4.0:compile, org.glassfish.jersey.core:jersey-common:jar:2.26:compile, javax.annotation:javax.annotation-api:jar:1.2:compile, org.glassfish.hk2:osgi-resource-locator:jar:1.0.1:compile, org.glassfish.jersey.core:jersey-server:jar:2.26:compile, org.glassfish.jersey.core:jersey-client:jar:2.26:compile, org.glassfish.jersey.media:jersey-media-jaxb:jar:2.26:compile, javax.validation:validation-api:jar:1.1.0.Final:compile, javax.ws.rs:javax.ws.rs-api:jar:2.1:compile, org.glassfish.jersey.inject:jersey-hk2:jar:2.26:compile, org.glassfish.hk2:hk2-locator:jar:2.5.0-b42:compile, org.glassfish.hk2.external:aopalliance-repackaged:jar:2.5.0-b42:compile, org.glassfish.hk2:hk2-api:jar:2.5.0-b42:compile, javax.inject:javax.inject:jar:1:compile, org.glassfish.hk2:hk2-utils:jar:2.5.0-b42:compile, org.javassist:javassist:jar:3.22.0-CR2:compile, org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.26:compile, org.glassfish.jersey.ext:jersey-entity-filtering:jar:2.26:compile, com.fasterxml.jackson.core:jackson-annotations:jar:2.8.4:compile, com.fasterxml.jackson.core:jackson-databind:jar:2.8.4:compile, com.fasterxml.jackson.core:jackson-core:jar:2.8.4:compile, com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.8.4:compile, org.glassfish.jersey.media:jersey-media-json-processing:jar:2.26:compile, org.glassfish:jsonp-jaxrs:jar:1.1.1:compile, org.glassfish.jersey.media:jersey-media-multipart:jar:2.26:compile, org.jvnet.mimepull:mimepull:jar:1.9.6:compile, org.glassfish.jersey.media:jersey-media-sse:jar:2.26:compile, net.sf.jopt-simple:jopt-simple:jar:6.0-alpha-1:compile]
+[[1;36mDEBUG[m] Collected project classpath [/home/isabella/Documents/FYP/minie/target/test-classes, /home/isabella/Documents/FYP/minie/target/classes]
+[[1;36mDEBUG[m] Adding to classpath : file:/home/isabella/Documents/FYP/minie/target/test-classes
+[[1;36mDEBUG[m] Adding to classpath : file:/home/isabella/Documents/FYP/minie/target/classes/
+[[1;36mDEBUG[m] Adding project dependency artifact: fastutil to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: stanford-corenlp to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: AppleJavaExtensions to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jollyday to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jaxb-api to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: commons-lang3 to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: lucene-queryparser to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: lucene-sandbox to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: lucene-analyzers-common to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: lucene-queries to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: lucene-core to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: javax.servlet-api to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: xom to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: xml-apis to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: xercesImpl to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: xalan to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: joda-time to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: ejml to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: javax.json to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: slf4j-api to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: protobuf-java to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: stanford-corenlp to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-container-grizzly2-http to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: javax.inject to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: grizzly-http-server to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: grizzly-http to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: grizzly-framework to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-common to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: javax.annotation-api to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: osgi-resource-locator to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-server to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-client to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-media-jaxb to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: validation-api to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: javax.ws.rs-api to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-hk2 to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: hk2-locator to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: aopalliance-repackaged to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: hk2-api to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: javax.inject to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: hk2-utils to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: javassist to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-media-json-jackson to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-entity-filtering to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jackson-annotations to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jackson-databind to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jackson-core to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jackson-module-jaxb-annotations to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-media-json-processing to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jsonp-jaxrs to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-media-multipart to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: mimepull to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jersey-media-sse to classpath
+[[1;36mDEBUG[m] Adding project dependency artifact: jopt-simple to classpath
+[[1;36mDEBUG[m] joining on thread Thread[tests.minie.Run.main(),5,tests.minie.Run]
+[[1;36mDEBUG[m] Setting accessibility to true in order to invoke main().
+
+Input sentence: President Trump announced on Sunday that a commando raid in Syria this weekend had targeted and resulted in the death of Abu Bakr al-Baghdadi, the leader of the Islamic State, claiming a significant victory even as American forces are pulling out of the area.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"President"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"targeted"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"resulted of"	"Abu Bakr al-Baghdadi"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Abu Bakr al-Baghdadi"	"is leader of"	"State"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "victory"	"be pulling out of"	"area"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "victory"	"be pulling"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces"	"pulling out of"	"area"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+“Last night, the United States brought the world’s No. 1 terrorist leader to justice,” Mr. Trump said in an unusual nationally televised address from the White House. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "United States"	"brought No. leader to"	"justice night"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "United States"	"brought No. leader to"	"justice"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "world"	"has"	"No. leader"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"said from"	"White House"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  “Abu Bakr al-Baghdadi is dead.”
+
+
+=============================
+Extractions:
+	Triple: "Abu Bakr al-Baghdadi"	"is"	"dead"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. Trump said Mr. al-Baghdadi was chased to the end of a tunnel, “whimpering and crying and screaming all the way” as he was pursued by American military dogs. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased of tunnel"	"whimpering"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"was chased"	"whimpering"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "he"	"was pursued by"	"dogs"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"was chased of"	"tunnel"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"was chased of tunnel"	"crying"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased of tunnel"	"screaming way"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased"	"crying"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased"	"screaming way"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Accompanied by three children, Mr. al-Baghdadi then detonated a suicide vest, blowing up himself and the children, Mr. Trump said.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest"	"blowing up children"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"be blowing"	"children"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"be Accompanied by"	"children"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest Accompanied by"	"children"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest"	"blowing up himself"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated"	"suicide vest"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"be blowing"	"himself"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest"	"blowing up"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"be blowing"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. al-Baghdadi’s body was mutilated by the blast, but Mr. Trump said a test had confirmed his identity. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"has"	"body"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "body"	"was mutilated by"	"blast"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "test"	"confirmed"	"identity"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "his"	"has"	"identity"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  The president made a point of repeatedly portraying Mr. al-Baghdadi as “sick and depraved” and him and his followers as “losers” and “frightened puppies,” using inflammatory, boastful language unlike the more solemn approaches by other presidents in such moments. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "president"	"made"	"point"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"followers"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "losers"	"be using language unlike"	"approaches"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "puppies"	"be using language unlike"	"approaches"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  “He died like a dog,” Mr. Trump said. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"died like"	"dog"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "He"	"died"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  “He died like a coward.”
+
+
+=============================
+Extractions:
+	Triple: "He"	"died like"	"coward"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"died"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. Trump said American forces, ferried by eight helicopters through airspace controlled by Russia with Moscow’s permission, were met by hostile fire when they landed and entered the target building by blowing a hole through the wall rather than take a chance on a booby-trapped main entrance. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces"	"be ferried through"	"airspace controlled"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "forces"	"be ferried by"	"helicopters"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "airspace"	"be controlled with"	"permission"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "airspace"	"be controlled by"	"Russia"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "Moscow"	"has"	"permission"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "forces ferried"	"were met by"	"fire"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "they"	"landed target building through"	"wall"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "they"	"landed"	"target building"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "forces ferried"	"were met by fire"	"entered"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "they"	"landed target building on"	"entrance"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "they"	"entered"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  No Americans were killed in the operation, although Mr. Trump said one of the military dogs was injured.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Americans"	"were killed in"	"operation"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. Trump, who is under threat of impeachment for abuse of power by pressuring Ukraine to investigate his domestic political rivals, appeared eager to claim credit for the raid, engaging in a lengthy question-and-answer session with reporters after his statement as he personally walked them through the details, promoted his own role and compared himself favorably to past presidents.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"is of impeachment for abuse of power by"	"pressuring Ukraine investigate rivals"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"is under"	"threat"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"rivals"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"appeared"	"eager claim credit engaging"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"statement"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"walked"	"them"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"walked them through"	"details"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"promoted"	"role"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"compared himself"	"presidents"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"compared"	"himself"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"role"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+The White House released a photograph of Mr. Trump surrounded by top advisers on Saturday in the Situation Room where he monitored the raid on Mr. al-Baghdadi’s hide-out in Syria, much like the famed image of President Barack Obama watching the raid that killed Osama bin Laden in 2011. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Barack Obama"	"is"	"President"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "White House"	"released photograph by advisers on Saturday in Situation Room like"	"image watching raid"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "White House"	"released"	"photograph surrounded"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "photograph"	"be surrounded on Saturday in"	"Situation Room"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"monitored raid in Syria"	"Situation Room"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"has hide-out in"	"Syria"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "image"	"be watching"	"raid"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "raid"	"killed Osama bin Laden in"	"2011"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "raid"	"killed"	"Osama bin Laden"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Mr. Trump even seemed to suggest that killing Mr. al-Baghdadi was a bigger deal than killing Bin Laden.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "killing al-Baghdadi"	"was deal than"	"killing Bin Laden"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "killing al-Baghdadi"	"was"	"deal"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. al-Baghdadi never occupied the same space in the American psyche as Bin Laden, but proved to be a tenacious and dangerous enemy of the United States and its allies in the Middle East.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"occupied space in"	"psyche"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"occupied space as"	"Bin Laden"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"occupied"	"space"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"be enemy of"	"United States"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"be"	"enemy"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "its"	"has allies in"	"Middle East"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+The son of a sheepherder from Iraq, Mr. al-Baghdadi, 48, was arrested by occupying American forces in 2004 and emerged radicalized from 11 months of captivity and came to assemble a potent terrorist force that overtook Al Qaeda. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "son"	"is"	"al-Baghdadi"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"is"	"son"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "son"	"is"	"QUANT_O_1"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "son"	"was arrested in"	"2004"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "son"	"emerged"	"radicalized"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "son"	"assemble"	"force"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "force"	"overtook"	"Al Qaeda"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  He promoted a virulent form of Islam and at one point controlled a swath of territory the size of Britain.
+
+
+=============================
+Extractions:
+	Triple: "He"	"promoted form of"	"Islam"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"controlled swath at"	"point"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"controlled swath of"	"territory"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+The discovery of Mr. al-Baghdadi’s location came after the arrest and interrogation of one of Mr. al-Baghdadi’s wives and a courier this summer, two American officials said. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "discovery"	"came after interrogation"	"this summer"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "discovery"	"came of of courier"	"this summer"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "discovery"	"came after"	"interrogation"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "discovery"	"came after"	"arrest"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"has"	"location"	
+	Factuality: (+,CT)	Attribution: (two American officials, (+,CT))
+	----------
+	Triple: "discovery"	"came of of wives"	"this summer"	
+	Factuality: (+,CT)	Attribution: (two American officials, (+,CT))
+	----------
+	Triple: "discovery"	"came after"	"arrest"	
+	Factuality: (+,CT)	Attribution: (two American officials, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"has"	"wives"	
+	Factuality: (+,CT)	Attribution: (two American officials, (+,CT))
+	----------
+	Triple: "discovery"	"came after"	"this summer"	
+	Factuality: (+,CT)	Attribution: (two American officials, (+,CT))
+	----------
+	Triple: "discovery"	"came of of"	"this summer"	
+	Factuality: (+,CT)	Attribution: (two American officials, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  The location surprised his American pursuers because it was deep inside a part of northwestern Syria controlled by archrival Qaeda groups.
+
+
+=============================
+Extractions:
+	Triple: "location"	"surprised"	"pursuers"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"pursuers"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "it"	"was deep of Syria controlled by"	"Qaeda groups"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "it"	"was"	"deep"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "part"	"be controlled by"	"Qaeda groups"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Armed with that initial tip, the C.I.A. worked closely with Kurdish intelligence officials in Iraq and Syria — including those caught off guard by Mr. Trump’s decision to withdraw American troops from northern Syria earlier this month — to identify Mr. Baghdadi’s whereabouts and to put spies in place to monitor his periodic movements.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"be Armed with"	"tip"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"identify whereabouts Armed with"	"tip"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"put spies in place monitor movements Armed with"	"tip"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"put spies in place Armed with"	"tip"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"identify"	"whereabouts"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"put"	"spies monitor movements"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"put spies in"	"place"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"worked in Iraq including those caught off guard by decision withdraw troops from Syria identify"	"whereabouts"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"worked in Iraq including those caught off guard by decision withdraw troops from Syria put"	"spies monitor movements"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"worked in Iraq including those caught off guard by decision withdraw troops from Syria put spies in"	"place"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"worked in Syria including those caught off guard by decision withdraw troops from Syria identify"	"whereabouts"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"worked in Syria including those caught off guard by decision withdraw troops from Syria put"	"spies monitor movements"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "C.I.A."	"worked in Syria including those caught off guard by decision withdraw troops from Syria put spies in"	"place"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "those"	"be caught"	"guard"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"has"	"decision withdraw troops"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "decision"	"be withdraw troops from"	"Syria"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Baghdadi"	"has"	"whereabouts"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "put spies"	"be monitor"	"movements"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"movements"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+For Mr. Trump, a successful operation against Mr. al-Baghdadi could prove both a strategic victory in the battle against the Islamic State and a politically useful counterpoint to critics in both parties who have assailed him in recent weeks for the troop withdrawal, which allowed Turkey to attack and push out America’s Kurdish allies from northern Syria.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "operation"	"prove victory against State For"	"Trump"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+	Triple: "operation"	"prove counterpoint in parties For"	"Trump"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+	Triple: "operation"	"prove"	"victory"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+	Triple: "operation"	"prove"	"counterpoint"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+	Triple: "parties"	"assailed him in"	"recent weeks"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "parties"	"assailed him for"	"troop withdrawal"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "parties"	"assailed"	"him"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "troop withdrawal"	"allowed Turkey attack from"	"Syria"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "troop withdrawal"	"allowed Turkey"	"push out allies"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "America"	"has"	"allies"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+But experts have long warned that even eliminating the leader of terrorist organizations like the Islamic State does not eliminate the threat. 
+=============================
+Extractions:
+	Triple: "State"	"is"	"organization"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "eliminating leader"	"eliminate"	"threat"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Mr. al-Baghdadi has been incorrectly reported killed before, and American military officials were concerned that Mr. Trump, who posted a cryptic message on Twitter on Saturday night teasing his Sunday announcement, was so eager to announce the development that he was getting ahead of the forensics.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"been reported"	"incorrectly"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"been reported"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"posted message on"	"night teasing announcement"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"posted message on"	"Twitter"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "night"	"be teasing"	"announcement"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"announcement"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"getting of"	"forensics"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+A Defense Department official said before the president’s announcement that there was a strong belief — “near certainty” — that Mr. al-Baghdadi was dead, but that a full DNA analysis was not complete. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was"	"dead"	
+	Factuality: (+,CT)	Attribution: (A Defense Department official, (+,CT))
+	----------
+	Triple: "DNA analysis"	"was"	"complete"	
+	Factuality: (-,CT)	Attribution: (A Defense Department official, (+,CT))
+	----------
+	Triple: "belief"	"there was"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  The official said that with any other president, the Pentagon would wait for absolute certainty before announcing victory. 
+=============================
+Extractions:
+	Triple: "Pentagon"	"wait with"	"president"	
+	Factuality: (+,PS)	Attribution: (The official, (+,CT))
+	----------
+	Triple: "Pentagon"	"wait before"	"announcing victory"	
+	Factuality: (+,PS)	Attribution: (The official, (+,CT))
+	----------
+	Triple: "Pentagon"	"wait for"	"certainty"	
+	Factuality: (+,PS)	Attribution: (The official, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  But Mr. Trump was impatient to get the news out, the official said, and Defense Secretary Mark T. Esper appeared on the Sunday morning shows as a last-minute addition to the programs to promote the apparent success.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Mark T. Esper"	"is"	"Secretary"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Mark T. Esper"	"is Secretary of"	"Defense"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"was"	"impatient get out news"	
+	Factuality: (+,CT)	Attribution: (the official, (+,CT))
+	----------
+	Triple: "Mark T. Esper"	"appeared on"	"morning"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "programs"	"be promote"	"success"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Critics of the president’s decision to withdraw American forces quickly argued that the operation took place in spite of, not because of, Mr. Trump and that if the military had not slow-rolled his plan to withdraw, the raid would not have been possible. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "president"	"has"	"decision withdraw forces"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "decision"	"be withdraw"	"forces"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "operation"	"took place in"	"Trump"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"plan withdraw"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "plan"	"be withdraw"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "military"	"had have been"	"possible not slow-rolled plan withdraw"	
+	Factuality: (-,PS)	Attribution: NONE
+	----------
+	Triple: "raid"	"had have been"	"possible not slow-rolled plan withdraw"	
+	Factuality: (-,PS)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Rather than justifying a pullout, they said, the raid underscored the importance of maintaining an American military presence in Syria and Iraq to keep pressure on the Islamic State.
+
+
+=============================
+Extractions:
+	Triple: "raid"	"underscored importance in Syria keep pressure on State than"	"justifying pullout"	
+	Factuality: (+,CT)	Attribution: (they, (+,CT))
+	----------
+	Triple: "raid"	"underscored"	"importance"	
+	Factuality: (+,CT)	Attribution: (they, (+,CT))
+	----------
+	Triple: "maintaining presence"	"be keep pressure on"	"State"	
+	Factuality: (+,CT)	Attribution: (they, (+,CT))
+	----------
+	Triple: "raid"	"underscored importance in keep pressure on State than"	"justifying pullout"	
+	Factuality: (+,CT)	Attribution: (they, (+,CT))
+	----------
+	Triple: "raid"	"underscored importance in Iraq keep pressure on State than"	"justifying pullout"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "raid"	"underscored"	"importance"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "maintaining presence"	"be keep pressure on"	"State"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+“We must keep in mind that we were able to strike Baghdadi because we had forces in the region,” said Representative Michael Waltz, Republican of Florida and a former Army Green Beret. 
+=============================
+Extractions:
+	Triple: "Michael Waltz"	"is"	"Representative"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "we"	"were"	"able strike Baghdadi"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "we"	"had forces in"	"region"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Michael Waltz"	"said"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Michael Waltz"	"is Republican of"	"Florida"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Michael Waltz"	"is"	"Army Green Beret"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  “We must keep ISIS from returning by staying on offense.”
+
+
+=============================
+Extractions:
+	Triple: "We"	"keep ISIS from"	"returning"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. al-Baghdadi has been the focus of an intense international manhunt since 2014 when the terrorist network he led  seized huge parts of Iraq and Syria with the intention of creating a caliphate for Islamic extremists. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"been focus of"	"manhunt"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"been focus since"	"2014"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"has been"	"focus"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  He was believed to hew to extreme security measures, even when meeting with his most-trusted associates.
+
+
+=============================
+Extractions:
+	Triple: "He"	"hew to security measures meeting with"	"associates"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"hew to"	"security measures"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"associates"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+American forces working with allies on the ground like the Kurdish troops abandoned by Mr. Trump in recent days have swept Islamic State forces from the field in the last couple of years, recapturing the territory it had seized.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "troops"	"is"	"ground"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces"	"be working on troops abandoned by Trump in"	"recent days"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces"	"be working with"	"allies"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "troops"	"be abandoned by"	"Trump"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces working"	"swept forces from"	"field"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces working"	"swept forces in"	"the last couple of years"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces working"	"swept forces"	"recapturing territory"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces working"	"swept"	"forces"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces working"	"be recapturing"	"territory"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "it"	"seized"	"territory"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. al-Baghdadi’s death is another important victory in the campaign against the Islamic State, but counterterrorism experts warned that the organization could still be a potent threat.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"has"	"death"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "death"	"is victory against"	"State"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "death"	"is"	"victory"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "organization"	"be"	"threat"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+“The danger here is that President Trump decides once again to shift focus away from ISIS now that its leader is dead,” said Jennifer Cafarella, research director for the Institute for the Study of War in Washington. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"President"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Institute for the Study of War"	"is in"	"Washington"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "its"	"has"	"leader"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "leader"	"is"	"dead"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Jennifer Cafarella"	"said"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Jennifer Cafarella"	"is research director for"	"Institute"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  “Unfortunately, killing leaders does not defeat terrorist organizations. 
+=============================
+Extractions:
+	Triple: "killing leaders"	"defeat"	"organizations"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  We should have learned that lesson after killing Osama bin Laden, after which Al Qaeda continued to expand globally.”
+
+
+=============================
+Extractions:
+	Triple: "Al Qaeda"	"continued which expand"	"globally"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+The Islamic State has its roots in Al Qaeda in Iraq, a deadly radical Sunni group founded in the early years of the Iraq war by Abu Musab Al-Zarqawi. 
+=============================
+Extractions:
+	Triple: "Al Qaeda"	"is in"	"Iraq"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "State"	"has roots in Al Qaeda"	"group founded"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "its"	"has roots in"	"Iraq"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "group"	"be founded of war by"	"Abu Musab Al-Zarqawi"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "group"	"be founded of"	"war"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  In June 2006, Mr. Al-Zarqawi was killed in a safe house by American bombs, but his group continued its devastating violence in Iraq, and the civil war worsened over the next year. 
+=============================
+Extractions:
+	Triple: "Al-Zarqawi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Al-Zarqawi"	"was killed by bombs In"	"June 2006"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Al-Zarqawi"	"was killed by"	"bombs"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"group"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "group"	"continued violence in"	"Iraq"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "group"	"continued"	"violence"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "its"	"has"	"violence"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "war"	"worsened over"	"the next year"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Years later, Mr. al-Baghdadi, after a weak period for the group, transformed the organization into the Islamic State, with the help of officials once loyal to Saddam Hussein.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"transformed organization"	"Years later"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"transformed organization for"	"group"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"transformed organization into"	"State"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"transformed organization of"	"officials"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"transformed organization"	"loyal"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"transformed"	"organization"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+The American commando raid took place on Saturday in Idlib Province, hundreds of miles from the area along the Syrian-Iraqi border where Mr. al-Baghdadi had been believed to be hiding, according to senior officials. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"took place on"	"Saturday hundreds"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"took place in"	"Idlib Province hundreds"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"took place"	"hundreds according to officials"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"took place"	"hundreds"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"hiding"	"border"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Counterterrorism experts expressed surprise that Mr. al-Baghdadi was hiding in an area dominated by Al Qaeda groups so far from his strongholds.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"hiding by groups from"	"strongholds"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"hiding by"	"groups"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "area"	"be dominated by"	"groups"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"strongholds"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+However, the Islamic State has extensively penetrated Idlib Province since the fall of Raqqa, its stronghold in northeastern Syria, in late 2017. 
+=============================
+Extractions:
+	Triple: "Islamic State"	"penetrated"	"Idlib Province"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Islamic State"	"penetrated Idlib Province of"	"Raqqa"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "its"	"has stronghold in"	"late 2017"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  The American operation on Saturday took place in a smuggling area near the Turkish border where numerous ISIS foreign fighters have likely traversed, Ms. Cafarella said.
+
+
+=============================
+Extractions:
+	Triple: "Cafarella"	"is"	"female"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "fighters"	"traversed"	"border"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "operation"	"took place near"	"border"	
+	Factuality: (+,CT)	Attribution: (Ms. Cafarella, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+“It could be that he believed the chaos of Idlib would provide him with the cover he needed to blend in among hordes of jihadists and other rebels,” said Colin P. Clarke, a senior fellow at the Soufan Center, a research organization for global security issues.
+
+
+=============================
+Extractions:
+	Triple: "jihadists"	"is"	"rebel"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "chaos"	"provide him with"	"cover"	
+	Factuality: (+,PS)	Attribution: (he, (+,PS))
+	----------
+	Triple: "chaos"	"provide"	"him"	
+	Factuality: (+,PS)	Attribution: (he, (+,PS))
+	----------
+	Triple: "he"	"blend in among hordes of"	"jihadists cover"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"blend in among hordes of"	"rebels cover"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "chaos"	"provide him with"	"cover"	
+	Factuality: (+,PS)	Attribution: (Colin P. Clarke, (+,CT))
+	----------
+	Triple: "chaos"	"provide"	"him"	
+	Factuality: (+,PS)	Attribution: (Colin P. Clarke, (+,CT))
+	----------
+	Triple: "Colin P. Clarke"	"is fellow at"	"Soufan Center"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Soufan Center"	"is research organization for"	"security issues"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+But there is also a more ominous possibility of why Mr. al-Baghdadi was in Idlib. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "possibility"	"there is"	"also"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "possibility"	"there is"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was in"	"Idlib"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  “Baghdadi’s presence in Al Qaeda-dominated areas could signal many things,” Ms. Cafarella said. 
+=============================
+Extractions:
+	Triple: "Cafarella"	"is"	"female"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Baghdadi"	"has presence in"	"areas"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "presence"	"signal"	"things"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+	Triple: "Cafarella"	"said"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  “Most dangerous among them is resumed negotiations between him and Al Qaeda leaders for reunification and/or a collaboration with Al Qaeda elements on attacks against the West.”
+
+
+=============================
+Extractions:
+
+
+DONE!
+
+Input sentence: 
+
+American counterterrorism officials have voiced increased alarm about a Qaeda affiliate in northwestern Syria that they say is plotting attacks against the West by exploiting the chaotic security situation in the country’s northwest and the protection inadvertently afforded by Russian air defenses shielding Syrian government forces allied with Moscow.
+
+
+=============================
+Extractions:
+	Triple: "counterterrorism officials"	"voiced"	"alarm"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "they"	"say alarm in Syria that"	"plotting attacks"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "protection"	"be afforded with"	"Moscow"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "protection"	"be afforded"	"inadvertently"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "air defenses"	"be shielding government forces allied with"	"Moscow"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "government forces"	"be allied with"	"Moscow"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+This latest Qaeda branch, called Hurras al-Din, emerged in early 2018 after several factions broke away from a larger affiliate in Syria. 
+=============================
+Extractions:
+	Triple: "branch"	"be called"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "branch called"	"emerged in"	"early 2018"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "factions"	"broke in"	"Syria"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "factions"	"broke"	"away"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  It is the successor to the Khorasan Group, a small but dangerous organization of hardened senior Qaeda operatives that Ayman al-Zawahri, Al Qaeda’s leader, sent to Syria to plot attacks against the West.
+
+
+=============================
+Extractions:
+	Triple: "It"	"is successor to"	"Khorasan Group"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "It"	"is"	"successor"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Khorasan Group"	"is organization of"	"operatives"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Ayman al-Zawahri plot attacks"	"is"	"leader"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Ayman al-Zawahri"	"plot attacks against"	"West"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Al Qaeda"	"has"	"leader"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+If Mr. al-Baghdadi’s death is confirmed, it would set off a succession struggle among top Islamic State leaders. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"has"	"death"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "death"	"is confirmed"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "it"	"set off succession struggle among"	"leaders"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Many other top leaders have been killed in American drone strikes and raids in the past few years. 
+=============================
+Extractions:
+	Triple: "leaders"	"been killed in"	"years"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "leaders"	"been killed in"	"drone strikes"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "leaders"	"been killed in"	"raids"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Anticipating his own death, Mr. al-Baghdadi delegated authorities to regional and functional lieutenants to ensure that the Islamic State operations would continue.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"death"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"be Anticipating"	"death"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"delegated authorities"	"Anticipating death"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"delegated authorities to"	"lieutenants"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"delegated"	"authorities"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "operations"	"continue"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+“There are few publicly well-recognized candidates to potentially replace al-Baghdadi,” said Evan F. Kohlmann, who tracks militant websites at the New York security consulting firm Flashpoint Global Partners.
+
+
+
+=============================
+Extractions:
+	Triple: "candidates replace al-Baghdadi"	"There are"	
+	Factuality: (+,CT)	Attribution: (Evan F. Kohlmann, (+,CT))
+	----------
+	Triple: "candidates"	"be replace"	"al-Baghdadi"	
+	Factuality: (+,CT)	Attribution: (Evan F. Kohlmann, (+,CT))
+	----------
+	Triple: "Evan F. Kohlmann"	"tracks websites at"	"Flashpoint Global Partners"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Evan F. Kohlmann"	"tracks"	"websites"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+
+Mr. Kohlmann said the next most prominent public figure from within the Islamic State is its current official spokesman, Abu Hassan al-Muhajir, an enigma himself whose exact pedigree is still unclear.
+
+
+=============================
+Extractions:
+	Triple: "Kohlmann"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "its"	"has"	"official spokesman"	
+	Factuality: (+,CT)	Attribution: (Mr. Kohlmann, (+,CT))
+	----------
+	Triple: "figure"	"is"	"official spokesman"	
+	Factuality: (+,CT)	Attribution: (Mr. Kohlmann, (+,CT))
+	----------
+	Triple: "figure is official spokesman"	"is"	"Abu Hassan al-Muhajir"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Abu Hassan al-Muhajir"	"is"	"enigma"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "himself"	"has"	"pedigree"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "himself pedigree"	"is"	"unclear"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+In announcing the raid, Mr. Trump put himself in the center of the action, describing himself as personally hunting Mr. al-Baghdadi since the early days of his administration. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"is"	"hunting male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"be describing himself since days of"	"administration"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"be describing himself as"	"hunting"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"put himself in center In"	"announcing raid"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"put himself in"	"center describing himself"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"put himself of"	"action"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"administration"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  He said he watched the action on Saturday with Vice President Mike Pence; Mr. Esper; Gen. Mark A. Milley, the chairman of the Joint Chiefs of Staff; and others in the Situation Room “as though you were watching a movie.”
+
+
+=============================
+Extractions:
+	Triple: "Mike Pence"	"is"	"Vice President"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Esper"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Mark A. Milley"	"is"	"Gen."	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"watched action with"	"Mike Pence"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "he"	"watched action on"	"Saturday"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "Mark A. Milley"	"is chairman of"	"Joint Chiefs"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "you"	"watching"	"movie"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Unlike previous presidents announcing such operations, Mr. Trump ended his national address by taking questions from reporters. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "presidents"	"be announcing"	"operations"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"ended address Unlike"	"presidents announcing operations"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"ended address from"	"reporters"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"ended"	"address"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"address"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  He made a point of thanking Russia, Turkey, Syria and Iraq for their cooperation and said Kurdish forces provided “information that turned out to be helpful.”
+
+
+=============================
+Extractions:
+	Triple: "He"	"made point for"	"cooperation"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"made Turkey for"	"cooperation"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"made Syria for"	"cooperation"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"made Iraq for"	"cooperation"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"made point of"	"thanking Russia"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"made"	"Turkey"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"made"	"Syria"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"made"	"Iraq"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "He"	"said"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "their"	"has"	"cooperation"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces"	"be provided"	"information"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "information"	"turned out to be"	"helpful"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+By contrast, he described America’s traditional European allies as “a tremendous disappointment,” repeating his complaint that they have not agreed to take captured Islamic State fighters who originated from their countries.
+
+
+=============================
+Extractions:
+	Triple: "America"	"has"	"allies"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "they"	"take captured"	"fighters"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "fighters"	"originated from"	"countries"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "their"	"has"	"countries"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+He said that American troops did “an on-site test” of DNA to confirm Mr. al-Baghdadi’s identity and that they brought back “body parts” when leaving the scene. 
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "troops"	"did test of"	"DNA confirm identity"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "test"	"be confirm"	"identity"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"has"	"identity"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "they"	"brought back body parts when"	"leaving scene"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  Mr. Trump said two women were found there wearing suicide vests that did not detonate but were killed on the scene.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "women"	"were found"	"wearing suicide vests"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "suicide vests"	"detonate"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "suicide vests"	"were killed on"	"scene"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+The raid could help Mr. Trump with at least some hawkish Republican lawmakers who had broken with him over his decision to withdraw troops from Syria even as the president refused to notify Speaker Nancy Pelosi or other Democratic lawmakers in advance as his predecessors did in similar circumstances, saying he did not trust them not to leak.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Nancy Pelosi"	"is"	"Speaker"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Nancy Pelosi"	"is"	"lawmaker"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "raid"	"help Trump with at"	"lawmakers"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+	Triple: "raid"	"help"	"Trump"	
+	Factuality: (+,PS)	Attribution: NONE
+	----------
+	Triple: "lawmakers"	"broken over"	"decision withdraw troops"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "lawmakers"	"broken with"	"him"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"decision withdraw troops"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "decision"	"be withdraw troops from"	"Syria"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "president"	"notify Nancy Pelosi in"	"advance"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "president"	"notify lawmakers in"	"advance"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "president"	"notify"	"Nancy Pelosi"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "president"	"notify"	"lawmakers"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"predecessors"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "predecessors"	"did in"	"circumstances"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"trust them to"	"leak"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"trust"	"them"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. Trump invited Senator Lindsey Graham, Republican of South Carolina, usually a strong ally who had been the most outspoken critic of his Syria decision, to join him for the speech on Sunday morning and then sent Mr. Graham to brief reporters from the lectern in the White House briefing room, an unusual spectacle for a lawmaker.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Lindsey Graham"	"is"	"Senator"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Graham"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"invited Lindsey Graham"	"ally"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Lindsey Graham"	"is Republican of"	"South Carolina"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "ally"	"been critic of"	"decision"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "ally"	"been critic join him on"	"morning"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "ally"	"been critic"	"sent Graham brief reporters"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "ally"	"been critic spectacle for"	"lawmaker"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "ally"	"had been"	"critic"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "critic sent Graham brief reporters spectacle"	"be join him on"	"morning"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "critic sent Graham brief reporters spectacle"	"be join him for"	"speech"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "critic sent spectacle"	"be join Graham brief reporters from"	"lectern"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "critic sent spectacle"	"be join Graham brief"	"reporters"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "critic sent Graham brief reporters spectacle"	"be join for"	"lawmaker"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "his"	"has"	"decision"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. Graham called the raid “a game changer in the war on terror,” while adding that “the war is by no means over.” 
+=============================
+Extractions:
+	Triple: "Graham"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  He said Mr. Trump had reassured him on his concerns. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"reassured him on"	"concerns"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "Trump"	"reassured"	"him"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "his"	"has"	"concerns"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  “The president’s determination over time has paid off,” Mr. Graham said. 
+=============================
+Extractions:
+	Triple: "Graham"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "president"	"has determination over"	"time"	
+	Factuality: (+,CT)	Attribution: (Mr. Graham, (+,CT))
+	----------
+	Triple: "determination"	"paid off"	
+	Factuality: (+,CT)	Attribution: (Mr. Graham, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  “We don’t give him enough credit for destroying the caliphate.”
+
+
+=============================
+Extractions:
+	Triple: "We"	"give him credit for"	"destroying caliphate"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+He added: “This is a moment when President Trump’s worst critics should say, ‘Well done, Mr. President.
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"President"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "This"	"is"	"moment"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "Trump"	"has"	"critics"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "critics"	"say"	"done"	
+	Factuality: (+,PS)	Attribution: (He, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence: ’”
+
+Democrats were not quick to take the advice. 
+=============================
+Extractions:
+	Triple: "Democrats"	"were"	"quick take advice"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Former Vice President Joseph R. Biden Jr., a leading Democratic candidate for president, released a statement praising the military and intelligence officials involved in the raid without mentioning Mr. Trump at all.
+
+
+=============================
+Extractions:
+	Triple: "Joseph R. Biden Jr."	"is"	"Former Vice President"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Joseph R. Biden Jr."	"is candidate for"	"president"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Joseph R. Biden Jr."	"released"	"statement praising officials involved"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "statement"	"be praising"	"officials involved"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "officials"	"be involved without mentioning Trump at"	"QUANT_O_1"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "officials"	"be involved in"	"raid"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Representative Adam B. Schiff, Democrat of California and the chairman of the House Intelligence Committee who is leading the impeachment inquiry, said “good riddance” to “a bloodthirsty killer,” calling the raid “an important victory.” 
+=============================
+Extractions:
+	Triple: "Adam B. Schiff"	"is"	"Representative"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Adam B. Schiff"	"is Democrat of"	"California"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Adam B. Schiff"	"is chairman of"	"House Intelligence Committee"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "House Intelligence Committee"	"leading"	"impeachment inquiry"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Adam B. Schiff"	"said"	"riddance"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  But speaking on “This Week” on ABC, he offered no congratulations to Mr. Trump himself.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"be speaking on"	"ABC"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"be speaking on"	"This Week"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"offered congratulations"	"speaking"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"offered congratulations to"	"Trump"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"offered congratulations"	"himself"	
+	Factuality: (-,CT)	Attribution: NONE
+	----------
+	Triple: "he"	"offered"	"congratulations"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Instead, he said it was unwise for Mr. Trump not to notify the so-called Gang of Eight congressional leaders traditionally informed about such operations, noting that doing so would have been helpful for the president if something had gone wrong. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "it"	"was"	"unwise"	
+	Factuality: (+,CT)	Attribution: (he, (+,CT))
+	----------
+	Triple: "doing"	"been helpful for"	"president"	
+	Factuality: (+,PS)	Attribution: (he, (+,CT))
+	----------
+	Triple: "doing"	"have been"	"helpful"	
+	Factuality: (+,PS)	Attribution: (he, (+,CT))
+	----------
+	Triple: "something"	"gone"	"wrong"	
+	Factuality: (+,CT)	Attribution: (he, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  He also said the success of the raid did not absolve Mr. Trump of the decision to abandon the Kurds by pulling out.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "success"	"absolve"	"Trump"	
+	Factuality: (-,CT)	Attribution: (He, (+,CT))
+	----------
+	Triple: "decision"	"be abandon Kurds by"	"pulling out"	
+	Factuality: (+,CT)	Attribution: (He, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+“It’s a disastrous mistake to betray the Kurds this way,” he said. 
+=============================
+Extractions:
+	Triple: "It"	"'s"	"mistake betray Kurds"	
+	Factuality: (+,CT)	Attribution: (he, (+,CT))
+	----------
+
+
+DONE!
+
+Input sentence:  “I think it just improves the Russian position in the Middle East, something they desperately want.”
+
+=============================
+Extractions:
+	Triple: "it"	"improves position in"	"Middle East"	
+	Factuality: (+,CT)	Attribution: (I, (+,PS))
+	----------
+	Triple: "they"	"want"	"something"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: President Trump announced on Sunday that a commando raid in Syria this weekend had targeted and resulted in the death of Abu Bakr al-Baghdadi, the leader of the Islamic State, claiming a significant victory even as American forces are pulling out of the area.
+
+
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"President"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"targeted"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "commando raid"	"resulted of"	"Abu Bakr al-Baghdadi"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Abu Bakr al-Baghdadi"	"is leader of"	"State"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "victory"	"be pulling out of"	"area"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "victory"	"be pulling"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "forces"	"pulling out of"	"area"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+“Last night, the United States brought the world’s No. 1 terrorist leader to justice,” Mr. Trump said in an unusual nationally televised address from the White House. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "United States"	"brought No. leader to"	"justice night"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "United States"	"brought No. leader to"	"justice"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "world"	"has"	"No. leader"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"said from"	"White House"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  “Abu Bakr al-Baghdadi is dead.”
+
+
+=============================
+Extractions:
+	Triple: "Abu Bakr al-Baghdadi"	"is"	"dead"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence: 
+
+Mr. Trump said Mr. al-Baghdadi was chased to the end of a tunnel, “whimpering and crying and screaming all the way” as he was pursued by American military dogs. 
+=============================
+Extractions:
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased of tunnel"	"whimpering"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"was chased"	"whimpering"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "he"	"was pursued by"	"dogs"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"was chased of"	"tunnel"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"was chased of tunnel"	"crying"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased of tunnel"	"screaming way"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased"	"crying"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"was chased"	"screaming way"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+
+
+DONE!
+
+Input sentence:  Accompanied by three children, Mr. al-Baghdadi then detonated a suicide vest, blowing up himself and the children, Mr. Trump said.
+
+
+=============================
+Extractions:
+	Triple: "al-Baghdadi"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "Trump"	"is"	"male"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest"	"blowing up children"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"be blowing"	"children"	
+	Factuality: (+,CT)	Attribution: NONE
+	----------
+	Triple: "al-Baghdadi"	"be Accompanied by"	"children"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest Accompanied by"	"children"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest"	"blowing up himself"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated"	"suicide vest"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"be blowing"	"himself"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"detonated suicide vest"	"blowing up"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+	Triple: "al-Baghdadi"	"be blowing"	
+	Factuality: (+,CT)	Attribution: (Mr. Trump, (+,CT))
+	----------
+
+
+DONE!
+RUNNING
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  44.796 s
+[[1;34mINFO[m] Finished at: 2019-11-06T17:15:19+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
