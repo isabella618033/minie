@@ -2,8 +2,10 @@ package de.uni_mannheim.utils;
 
 import java.io.DataInput;
 import java.io.DataInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 
 import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
 
@@ -59,7 +61,13 @@ public class Dictionary {
     }
 
     private InputStream getInputStreamFromResource(String resourceName) throws IOException {
-        return this.getClass().getResource(resourceName).openStream();
+    	URL lol = this.getClass().getResource(resourceName);
+    	if (lol == null) {
+    		InputStream fin= new FileInputStream(resourceName);
+    		return fin; 
+    	}else {
+    		return lol.openStream();
+    	}
     }
 
     /** Loads a dictionary from a resource path

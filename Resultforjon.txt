@@ -132,7 +132,7 @@ OS name: "linux", version: "5.0.0-32-generic", arch: "amd64", family: "unix"
   <testSourceRoot>${testSourceRoot}</testSourceRoot>
 </configuration>
 [[1;36mDEBUG[m] =======================================================================
-[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=2258231, ConflictMarker.markTime=1373348, ConflictMarker.nodeCount=106, ConflictIdSorter.graphTime=1356955, ConflictIdSorter.topsortTime=909913, ConflictIdSorter.conflictIdCount=54, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=15714093, ConflictResolver.conflictItemCount=105, DefaultDependencyCollector.collectTime=638455121, DefaultDependencyCollector.transformTime=24594243}
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=2737036, ConflictMarker.markTime=1900888, ConflictMarker.nodeCount=106, ConflictIdSorter.graphTime=1285979, ConflictIdSorter.topsortTime=829711, ConflictIdSorter.conflictIdCount=54, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16527914, ConflictResolver.conflictItemCount=105, DefaultDependencyCollector.collectTime=790799867, DefaultDependencyCollector.transformTime=28463243}
 [[1;36mDEBUG[m] de.uni_mannheim:minie:jar:0.0.1-SNAPSHOT
 [[1;36mDEBUG[m]    it.unimi.dsi:fastutil:jar:8.1.0:compile
 [[1;36mDEBUG[m]    edu.stanford.nlp:stanford-corenlp:jar:3.8.0:compile
@@ -190,7 +190,7 @@ OS name: "linux", version: "5.0.0-32-generic", arch: "amd64", family: "unix"
 [[1;36mDEBUG[m]    net.sf.jopt-simple:jopt-simple:jar:6.0-alpha-1:compile
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.6.0:java[m [1m(default-cli)[m @ [36mminie[0;1m ---[m
-[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=1022901, ConflictMarker.markTime=433473, ConflictMarker.nodeCount=93, ConflictIdSorter.graphTime=697869, ConflictIdSorter.topsortTime=172790, ConflictIdSorter.conflictIdCount=39, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4739546, ConflictResolver.conflictItemCount=78, DefaultDependencyCollector.collectTime=243077526, DefaultDependencyCollector.transformTime=7228211}
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=1073800, ConflictMarker.markTime=353181, ConflictMarker.nodeCount=93, ConflictIdSorter.graphTime=634302, ConflictIdSorter.topsortTime=170560, ConflictIdSorter.conflictIdCount=39, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5042516, ConflictResolver.conflictItemCount=78, DefaultDependencyCollector.collectTime=266228497, DefaultDependencyCollector.transformTime=7430791}
 [[1;36mDEBUG[m] org.codehaus.mojo:exec-maven-plugin:jar:1.6.0:
 [[1;36mDEBUG[m]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
 [[1;36mDEBUG[m]    org.apache.maven:maven-project:jar:2.2.1:compile
@@ -368,12 +368,48 @@ snapshots: [enabled => false, update => daily]
 [[1;36mDEBUG[m] Adding project dependency artifact: jopt-simple to classpath
 [[1;36mDEBUG[m] joining on thread Thread[tests.minie.Run.main(),5,tests.minie.Run]
 [[1;36mDEBUG[m] Setting accessibility to true in order to invoke main().
+Nov 06, 2019 11:46:35 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator tokenize
+Nov 06, 2019 11:46:35 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: No tokenizer type provided. Defaulting to PTBTokenizer.
+Nov 06, 2019 11:46:35 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator ssplit
+Nov 06, 2019 11:46:36 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Replacing old annotator "depparse" with signature [] with new annotator with signature [depparse.model:edu/stanford/nlp/models/parser/nndep/english_SD.gz;]
+Nov 06, 2019 11:46:36 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator tokenize
+Nov 06, 2019 11:46:36 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator ssplit
+Nov 06, 2019 11:46:36 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator pos
+Nov 06, 2019 11:46:40 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Loading POS tagger from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [4.2 sec].
+Nov 06, 2019 11:46:40 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator lemma
+Nov 06, 2019 11:46:40 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator ner
+Nov 06, 2019 11:46:47 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [6.7 sec].
+Nov 06, 2019 11:46:50 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [3.2 sec].
+Nov 06, 2019 11:46:57 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [6.4 sec].
+Nov 06, 2019 11:46:57 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Initializing JollyDayHoliday for SUTime from classpath edu/stanford/nlp/models/sutime/jollyday/Holidays_sutime.xml as sutime.binder.1.
+Nov 06, 2019 11:46:58 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Adding annotator depparse
+Nov 06, 2019 11:46:59 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Loading depparse model file: edu/stanford/nlp/models/parser/nndep/english_SD.gz ... 
+Nov 06, 2019 11:47:11 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: PreComputed 100000, Elapsed Time: 3.072 (s)
+Nov 06, 2019 11:47:11 PM edu.stanford.nlp.util.logging.SLF4JHandler print
+INFO: Initializing dependency parser ... done [12.2 sec].
 [[1;33mWARNING[m] 
 [1;31mjava.lang.NullPointerException[m
     [1mat[m de.uni_mannheim.utils.Dictionary.getInputStreamFromResource ([1mDictionary.java:62[m)
     [1mat[m de.uni_mannheim.utils.Dictionary.load ([1mDictionary.java:69[m)
     [1mat[m de.uni_mannheim.utils.Dictionary.<init> ([1mDictionary.java:36[m)
-    [1mat[m tests.minie.MinIESentence.main ([1mMinIESentence.java:38[m)
+    [1mat[m tests.minie.MinIESentence.main ([1mMinIESentence.java:39[m)
     [1mat[m tests.minie.TextPrep.main ([1mTextPrep.java:34[m)
     [1mat[m tests.minie.Run.main ([1mRun.java:12[m)
     [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
@@ -385,8 +421,8 @@ snapshots: [enabled => false, update => daily]
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  20.207 s
-[[1;34mINFO[m] Finished at: 2019-11-06T17:35:24+08:00
+[[1;34mINFO[m] Total time:  38.727 s
+[[1;34mINFO[m] Finished at: 2019-11-06T23:47:12+08:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;31mERROR[m] Failed to execute goal [32morg.codehaus.mojo:exec-maven-plugin:1.6.0:java[m [1m(default-cli)[m on project [36mminie[m: [1;31mAn exception occured while executing the Java class. null[m: NullPointerException -> [1m[Help 1][m
 [1;31morg.apache.maven.lifecycle.LifecycleExecutionException[m: [1;31mFailed to execute goal [32morg.codehaus.mojo:exec-maven-plugin:1.6.0:java[m [1m(default-cli)[m on project [36mminie[m: [1;31mAn exception occured while executing the Java class. null[m[m
@@ -439,7 +475,7 @@ snapshots: [enabled => false, update => daily]
     [1mat[m de.uni_mannheim.utils.Dictionary.getInputStreamFromResource ([1mDictionary.java:62[m)
     [1mat[m de.uni_mannheim.utils.Dictionary.load ([1mDictionary.java:69[m)
     [1mat[m de.uni_mannheim.utils.Dictionary.<init> ([1mDictionary.java:36[m)
-    [1mat[m tests.minie.MinIESentence.main ([1mMinIESentence.java:38[m)
+    [1mat[m tests.minie.MinIESentence.main ([1mMinIESentence.java:39[m)
     [1mat[m tests.minie.TextPrep.main ([1mTextPrep.java:34[m)
     [1mat[m tests.minie.Run.main ([1mRun.java:12[m)
     [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
