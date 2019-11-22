@@ -16,8 +16,7 @@ import edu.stanford.nlp.semgraph.SemanticGraph;
  */
 public class MinIESentence {
 	public static void main(String input) throws IOException {
-		String DictDir = "/home/isabella/Documents/FYP/minie/minie-resources/";
-		String DictDir2 = "/home/isabella/Documents/FYP/minie/src/main/resources/minie-resources/";
+		String DictDir = "/home/isabella/Documents/FYP/minie/src/main/resources/minie-resources/";
 
 		// Dependency parsing pipeline initialization
 		StanfordCoreNLP parser = CoreNLPUtils.StanfordDepNNParser();
@@ -33,7 +32,10 @@ public class MinIESentence {
 		
 		
 //		filenames = DictDir + "wiki-freq-args-mw.txt"; 
-		String [] filenames = { DictDir2 + "wiki-freq-args-mw.txt" };
+		
+		String [] filenames = {DictDir + "wiki-freq-args-mw.txt"};
+		
+//		String [] filenames = { DictDir2 + "wiki-freq-args-mw.txt" };
 		 
 		Dictionary collocationsDict = new Dictionary(filenames);
 //		collocationsDict = new Dictionary();
@@ -42,19 +44,18 @@ public class MinIESentence {
 		 
 
 		// Print the extractions
-		System.out.println("\nInput sentence: " + sentence);
-		System.out.println("=============================");
-		System.out.println("Extractions:");
+//		System.out.println("\nInput sentence: " + sentence);
+//		System.out.println("=============================");
+//		System.out.println("Extractions:");
 		for (AnnotatedProposition ap : minie.getPropositions()) {
-			System.out.println("\tTriple: " + ap.getTripleAsString());
-			System.out.print("\tFactuality: " + ap.getFactualityAsString());
-			if (ap.getAttribution().getAttributionPhrase() != null)
-				System.out.print("\tAttribution: " + ap.getAttribution().toStringCompact());
-			else
-				System.out.print("\tAttribution: NONE");
-			System.out.println("\n\t----------");
+			System.out.println(ap.getTripleAsString());
+//			System.out.println("\tTriple: " + ap.getTripleAsString());
+//			System.out.print("\tFactuality: " + ap.getFactualityAsString());
+//			if (ap.getAttribution().getAttributionPhrase() != null)
+//				System.out.print("\tAttribution: " + ap.getAttribution().toStringCompact());
+//			else
+//				System.out.print("\tAttribution: NONE");
+//			System.out.println("\n\t----------");
 		}
-
-		System.out.println("\n\nDONE!");
 	}
 }

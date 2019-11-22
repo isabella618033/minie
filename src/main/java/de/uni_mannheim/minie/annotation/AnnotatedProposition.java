@@ -211,10 +211,11 @@ public class AnnotatedProposition {
         
         // Write the triple
         for (int j = 0; j < this.getTriple().size(); j++){
-            sb.append(CHARACTER.QUOTATION_MARK);
+//            sb.append(CHARACTER.QUOTATION_MARK);
             sb.append(getTriple().get(j).getWords());
-            sb.append(CHARACTER.QUOTATION_MARK);
-            sb.append(SEPARATOR.TAB);
+//            sb.append(CHARACTER.QUOTATION_MARK);
+//            sb.append(SEPARATOR.TAB);
+            sb.append(SEPARATOR.COMMA);
         }
         
         return sb.toString();
